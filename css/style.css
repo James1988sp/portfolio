@@ -30,16 +30,21 @@ blockquote, q {
   quotes: none; }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  font-size: 22px;
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
 }
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #202020;
+}
+
 
 .navbar-brand {
   font-size: 28px;
@@ -53,18 +58,22 @@ mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 hr {
   display: block;
@@ -72,34 +81,42 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 /* =============================================================================
    My CSS
    ========================================================================== */
 /* ---- base ---- */
 div p {
-  color: blue; }
+  color: blue;
+}
 
 html, body {
   width: 100%;
-  background: #111; }
+  background: #111;
+}
 
 html {
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
-  font: normal 75% Arial, Helvetica, sans-serif; }
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
 
 canvas {
   display: block;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 main {
   overflow: scroll;
@@ -119,23 +136,28 @@ main {
   line-height: 14px;
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .js-count-particles {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+}
 
 #stats,
 .count-particles {
   -webkit-user-select: none;
   margin-top: 5px;
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
 #stats {
   border-radius: 3px 3px 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .count-particles {
-  border-radius: 0 0 3px 3px; }
+  border-radius: 0 0 3px 3px;
+}
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -156,15 +178,15 @@ main {
 
 img {
   max-width: 500px;
-  border: 3px solid LightSkyBlue;
+  border: 3px solid white;
 }
 
 footer {
 padding: 10px 0;
-text-align: center;
+text-align: justify;
 color: white;
 position: relative;
-display: block;
+margin-top: 10%;
 }
 
 header .row,
@@ -218,6 +240,7 @@ section .container .row img {
 
 .navbar {
   background-color: #A0A0A0;
+  position: fixed;
 
 }
 
@@ -243,10 +266,9 @@ figure {
   width: 40%;
 }
 
-
 .aboutSection {
   position: relative;
-  margin-top: 40%;
+  margin-top: 25%;
   margin-bottom: 20%;
   left: 0%;
   color: #23527c;
@@ -260,9 +282,10 @@ figure {
 
 .about p {
   color: #337ab7;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 15px;
   line-height: 1.3;
+  text-align: justify;
 
 }
 
@@ -286,8 +309,9 @@ h2 {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 24px;
   padding: 20px 0;
+  text-align: center;
 }
 
 footer .col-sm-8 {
@@ -296,6 +320,11 @@ footer .col-sm-8 {
 
 footer ul {
   display: inline;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 li {
