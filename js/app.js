@@ -1,15 +1,8 @@
-// function scrollToSection() {
-//   const section = $(this).attr('href'); //'#menus'
-//   $('body').animate( {
-//     scrollTop: $(section).offset().top
-//   }, 1000
-//   );
-// }
-//
-// $('#project2').on('mouseover', () => {
-//   $('#voglio2').removeClass('hidden');
+// $(document).ready(function(){
+//   $('#flip').click(function(){
+//     $('#skills').slideToggle('slow');
+//   });
 // });
-
 particlesJS('particles-js',
 
   {

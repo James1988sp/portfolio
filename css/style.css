@@ -294,6 +294,7 @@ figure {
   font-size: 2em;
 }
 
+
 header {
   position: fixed;
   top: 0;
@@ -455,7 +456,7 @@ section {
   text-align: center;
   min-width: 320px;
   position: relative;
-  border-bottom: 3px dotted red;
+
 }
 
 .tooltip {
