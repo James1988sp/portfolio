@@ -96,6 +96,7 @@ li {
    My CSS
    ========================================================================== */
 /* ---- base ---- */
+
 div p {
   color: blue;
 }
@@ -105,9 +106,8 @@ html, body {
   background: #111;
 }
 
-html {
-  -webkit-tap-highlight-color: transparent;
-}
+-webkit-tap-highlight-color: transparent;
+
 
 body {
   font: normal 75% Arial, Helvetica, sans-serif;
@@ -174,11 +174,11 @@ main {
 
 }
 
-/*# sourceMappingURL=style.css.map */
+# sourceMappingURL=style.css.map
 
 img {
-  max-width: 500px;
-  border: 3px solid white;
+  max-width: 400px;
+  border: 2px solid #23527c;
 }
 
 footer {
@@ -241,13 +241,12 @@ section .container .row img {
 .navbar {
   background-color: #A0A0A0;
   position: fixed;
-
 }
 
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
+    width: 100%;
     margin: auto;
 }
 
@@ -262,22 +261,19 @@ section .container .row img {
 }
 
 figure {
-  text-align: center;
-  width: 40%;
+  text-align:   ;
+  position: relative;
 }
 
 .aboutSection {
   position: relative;
   margin-top: 25%;
   margin-bottom: 20%;
-  left: 0%;
   color: #23527c;
-
 }
 
 .about{
   padding: 15px 25%;
-  position: relative;
 }
 
 .about p {
@@ -286,12 +282,17 @@ figure {
   margin-top: 15px;
   line-height: 1.3;
   text-align: justify;
-
 }
 
-.about h1 {
-  color: #337ab7;
-  font-size: 28px;
+.aboutSection h1 {
+  color: rgba(60,60,60,0.7);
+  font-size: 4.5em;
+  width: 100%;
+}
+
+.aboutSection h3 {
+  color: #aaa;
+  font-size: 2em;
 }
 
 header {
@@ -338,4 +339,463 @@ p {
 .col-sm-1 {
   font-size: 18px;
   padding-left: 135px;
+}
+
+body {
+  text-align:center;
+  font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #888;
+}
+
+h1 {
+  font-weight: normal;
+  float: left;
+}
+
+figure img {
+  display: inline-grid;
+  width: 100%;
+}
+
+#Gianmaria {
+ position: relative;
+ padding: 15px 25%;
+}
+
+#project {
+  display: grid;
+  white-space: nowrap;
+}
+
+.aboutProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.voglio {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;;
+}
+
+.voglio p {
+  overflow: visible;
+  width: 300px;
+  text-align: justify;
+}
+/* codepen */
+.item {
+  position: relative;
+  display: inline-block;
+  padding: 12px 12px 6px;
+  background: #F2F2F2;
+  border: 1px solid #EEE;
+  vertical-align:top;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%; left:0; right: 0; bottom: 0;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  opacity: 0;
+}
+
+.overlay, .overlay span {
+  transition: top .5s, opacity .7s, margin-top .8s;
+}
+
+.overlay span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  padding: 0 20px;
+  margin-top: 120px; /* for the animation */
+  color: #F2F2F2;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  word-wrap:break-word;
+  line-height: 1;
+  opacity: 0;
+}
+
+.overlay span:before {
+  content: "";
+  display:inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 1px;
+}
+
+.item:hover .overlay,
+.overlay:focus {
+  top: 0;
+  opacity: 1;
+}
+
+.item:hover .overlay span,
+.overlay:focus span {
+  opacity: 1;
+  margin-top: 0; /* for the animation */
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Skills */
+/*@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body{
+	color:#535f6e;
+  padding: 0;
+  margin: 1em auto;
+	position: relative;
+  background-color:#363F48;
+}
+
+#skill {
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+	width: 296px;
+	margin: 50px auto 0;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+#skill li {
+	margin-bottom:50px;
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+	height:20px;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+
+#skill li h3 {
+	position:relative;
+	top:-35px;
+}
+
+.bar {
+	height:18px;
+	margin:1px 2px;
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.graphic-design {
+	width:100%;
+	-moz-animation:graphic-design 2s ease-out;
+	-webkit-animation:graphic-design 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+.html-css {
+	width:90%;
+	-moz-animation:html-css 2s ease-out;
+	-webkit-animation:html-css 2s ease-out;
+	background-color: #f0bb4b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.jquery {
+	width:65%;
+	-moz-animation:jquery 2s ease-out;
+	-webkit-animation:jquery 2s ease-out;
+	background-color: #a1ce5b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+.wordpress {
+	width:80%;
+	-moz-animation:wordpress 2s ease-out;
+	-webkit-animation:wordpress 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba)
+}
+
+@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:100%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }*/
+
+/* ChartSkills */
+.base-abt, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1F2428;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+section {
+  display: inline-block;
+  width: 10%;
+  margin: 50px 0;
+  text-align: center;
+  min-width: 320px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background: #eee;
+  padding: 3px;
+  font-weight: 100;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid  #ddd;
+  bottom: 100%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.tooltip:after {
+  content: "" attr(tooltip) "";
+  margin-left: 3px;
+  color: #2DABD8;
+}
+.tooltip:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #2DABD8;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.graph {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 280px;
+  font-weight: 600;
+  border-radius: 150px 150px 0 0;
+  overflow: hidden;
+  color: #0ff;
+}
+.graph:before, .graph:after {
+  content: '';
+  width: 300px;
+  height: 150px;
+  border: 50px solid #0ff;
+  border-top: none;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  border-radius: 0 0 300px 300px;
+  -webkit-animation: demo 2s;
+  animation: demo 2s;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+}
+.graph:after {
+  z-index: 3;
+  border-color: rgba(0, 0, 0, 0.15);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.graph:hover:before {
+  opacity: .8;
+  cursor: pointer;
+}
+.graph:hover + .tooltip {
+  bottom: 105%;
+  opacity: 1;
+}
+
+.multi-graph {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  margin: auto;
+  color: #fff;
+  font-size: 22px;
+  line-height: 280px;
+  font-weight: 600;
+}
+.multi-graph:before {
+  content: '';
+  width: 300px;
+  height: 150px;
+  border: 50px solid rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  position: absolute;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  border-radius: 300px 300px 0 0;
+  left: 0;
+  top: 0;
+}
+.multi-graph .graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.multi-graph .graph:after {
+  background: #eee;
+  border: medium none;
+  border-radius: 2px;
+  color: #333;
+  font-weight: 200;
+  content: "" attr(data-name) "";
+  display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  left: 50%;
+  line-height: 20px;
+  padding: 0 5px;
+  top: 50px;
+  z-index: 0;
+  -ms-transform: rotate(0deg) translateX(-50%);
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
+  width: auto;
+  opacity: 0;
+}
+.multi-graph .graph:hover:after {
+  opacity: 1;
+  top: 70px;
+}
+
+.model-1 .graph {
+  color: #EC4A26;
+}
+.model-1 .graph:before {
+  -ms-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+  border-color: #EC4A26;
+}
+
+section.model-2 .graph {
+  color: #2DABD8;
+}
+section.model-2 .graph:before {
+  -ms-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+  border-color: #2DABD8;
+}
+
+section.model-3 .javaScript:before {
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-color: #FEDA3E;
+}
+section.model-3 .jQuery:before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  border-color: #0669AD;
+}
+
+section.model-3 .graph {
+  color: #2DABD8;
+}
+
+section.model-4 .graph {
+  color: #2DABD8;
+}
+section.model-4 .graph:before {
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+  border-color: #2DABD8;
+}
+
+section.model-5 .front {
+  color: #2DABD8;
+}
+section.model-5 .front:before {
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+  border-color: #2DABD8;
+}
+
+@-webkit-keyframes demo {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes demo {
+  0% {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
