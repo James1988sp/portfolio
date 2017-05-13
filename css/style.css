@@ -264,18 +264,17 @@ figure {
 }
 
 .aboutSection {
-  /*position: relative;*/
   width: 100%;
   margin-top: 25%;
   margin-bottom: 20%;
   color: #23527c;
 }
 
-.about{
+#about{
   padding: 15px 25%;
 }
 
-.about p {
+#about p {
   color: #337ab7;
   font-size: 22px;
   margin-top: 15px;
@@ -300,8 +299,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 6;
   height: 90px;
+
 }
 
 h2 {
@@ -367,6 +367,8 @@ figure img {
   white-space: nowrap;
 }
 
+
+
 .aboutProject {
   position: absolute;
   top: 0;
@@ -379,10 +381,12 @@ figure img {
   position: relative;
   display: inline-block;
   padding: 12px 12px 6px;
-  background: #F2F2F2;
-  border: 1px solid #EEE;
   vertical-align:top;
   overflow: hidden;
+}
+
+.img-fluid {
+border: 4px solid white;
 }
 
 .overlay {
@@ -439,6 +443,11 @@ figure img {
 
 
 /* Skills */
+
+#base{
+  margin-top: 200px;
+}
+
 .base-abt, :after, :before {
   box-sizing: border-box;
 }
@@ -463,8 +472,8 @@ section {
   position: absolute;
   background: #eee;
   padding: 3px;
-  font-weight: 100;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 15px;
   border-radius: 2px;
   border: 1px solid  #ddd;
   bottom: 100%;
@@ -476,19 +485,33 @@ section {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.tooltip:after {
+.model-1 .tooltip:after {
   content: "" attr(tooltip) "";
   margin-left: 3px;
-  color: #2DABD8;
+  color: red;
 }
-.tooltip:before {
+.model-2 .tooltip:after {
+  content: "" attr(tooltip) "";
+  margin-left: 3px;
+  color: rgb(45, 171, 216);
+}
+.model-4 .tooltip:after {
+  content: "" attr(tooltip) "";
+  margin-left: 3px;
+  color: magenta;
+}
+.model-5 .tooltip:after {
+  content: "" attr(tooltip) "";
+  margin-left: 3px;
+  color: #7CFC00;
+}
+/*.tooltip:before {
   content: '';
   width: 8px;
   height: 8px;
-  background: #2DABD8;
   display: inline-block;
   margin-right: 5px;
-}
+}*/
 
 .graph {
   width: 300px;
@@ -517,7 +540,7 @@ section {
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
   border-radius: 0 0 300px 300px;
-  -webkit-animation: demo 2s;
+  -webkit-animation: demo 5s;
   animation: demo 2s;
   left: 0;
   top: 100%;
@@ -594,10 +617,10 @@ section {
   top: 70px;
 }
 
-.model-1 .graph {
+section.model-1 .graph {
   color: #EC4A26;
 }
-.model-1 .graph:before {
+section.model-1 .graph:before {
   -ms-transform: rotate(100deg);
   -webkit-transform: rotate(100deg);
   transform: rotate(100deg);
@@ -672,4 +695,59 @@ section.model-5 .graph:before {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+}
+
+
+body{
+  background: #263238;
+}
+
+.arrow-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+}
+
+.arrow-1{
+  width: 100px;
+  height: 100px;
+  background: #00BCD4;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.arrow-2{
+  width: 60px;
+  height: 60px;
+  background: #00BCD4;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: table;
+}
+
+.arrow-2:before{
+  width: 52px;
+  height: 52px;
+  content: "";
+  border: 2px solid #006064;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.arrow-2 i.fa{
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #006064;
 }
