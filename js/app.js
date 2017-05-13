@@ -1,20 +1,36 @@
 const $links = $('nav a');
+const $menu = $('#menu');
+const $window = $(window);
 
 $links.on('click', scrollToSection);
+$menu.on('click', toggleMenu);
 
-function scrollToSection() {
-  const section = $(this).attr('href');
-  $('body').animate( {
-    scrollTop: $(section).offset().top
-  }, 1000
-  );
+function toggleMenu() {
+  $('.dropdown').slideToggle();
+  $('#menu').toggle();
+  $('#navbar').css('background-color','rgba(40,40,40,0.9)' );
+
 }
 
+function scrollToSection() {
+  const section = $(this).attr('href'); //'#menus'
+  $('body').animate( {
+    scrollTop: $(section).offset().top
+  }, 1000, () => {
+    if($window.width() <575) {
+      $('.dropdown').slideToggle();
+      $('#menu').slideToggle();
+      $('#navbar').css('background-color','rgba(0,0,0,0)' );
+    }
+  });
+}
 
 $('#skill').click(function(){
   $('.graph').hide();
   $('.graph').toggle();
 });
+
+
 
 // $(document).ready(function () {
 //   //Move Next section
