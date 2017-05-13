@@ -10,9 +10,12 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   vertical-align: baseline;
   background: transparent; }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
 body {
   line-height: 1;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
  }
  header {
@@ -263,15 +266,38 @@ figure {
   position: relative;
 }
 
-.aboutSection {
-  width: 100%;
-  margin-top: 25%;
-  margin-bottom: 20%;
+.logoSection {
   color: #23527c;
+  text-align: center;
+  margin: 20% auto;
+}
+
+.logoSection h1 {
+  color: rgba(220,220,220,0.7);
+  font-size: 4.5em;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.logoSection h3 {
+  color: #aaa;
+  font-size: 2em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.aboutSection {
+  color: #23527c;
+  text-align: center;
+  width:100%;
 }
 
 #about{
-  padding: 15px 25%;
+margin: 0 auto;
+padding-top: 20%;
+padding-bottom: 20%;
+ width: 50vw;
 }
 
 #about p {
@@ -282,16 +308,9 @@ figure {
   text-align: justify;
 }
 
-.aboutSection h1 {
-  color: rgba(60,60,60,0.7);
-  font-size: 4.5em;
-  width: 100%;
-}
 
-.aboutSection h3 {
-  color: #aaa;
-  font-size: 2em;
-}
+
+
 
 
 header {
@@ -313,6 +332,7 @@ footer {
   font-size: 24px;
   padding: 20px 0;
   text-align: center;
+  margin: 30% auto;
 }
 
 footer .col-sm-8 {
@@ -343,7 +363,7 @@ p {
 
 body {
   text-align:center;
-  font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #888;
 }
 
@@ -445,7 +465,7 @@ border: 4px solid white;
 /* Skills */
 
 #base{
-  margin-top: 200px;
+  padding-top: 15%;
 }
 
 .base-abt, :after, :before {
@@ -455,12 +475,11 @@ border: 4px solid white;
 body {
   background: #1F2428;
   text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 section {
   display: inline-block;
-  width: 10%;
   margin: 50px 0;
   text-align: center;
   min-width: 320px;
@@ -505,13 +524,6 @@ section {
   margin-left: 3px;
   color: #7CFC00;
 }
-/*.tooltip:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  margin-right: 5px;
-}*/
 
 .graph {
   width: 300px;
